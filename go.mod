@@ -5,8 +5,8 @@ go 1.17
 require (
 	github.com/ahmetb/go-linq/v3 v3.2.0
 	github.com/aws-cloudformation/cloudformation-cli-go-plugin v1.0.3
-	github.com/aws/aws-lambda-go v1.28.0
-	github.com/aws/aws-sdk-go v1.43.28
+	github.com/aws/aws-lambda-go v1.34.1
+	github.com/aws/aws-sdk-go v1.44.88
 	github.com/distribution/distribution/v3 v3.0.0-20220526142353-ffbd94cbe269
 	github.com/gofrs/flock v0.8.1
 	github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5
@@ -108,6 +108,7 @@ require (
 	github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.3-0.20211202183452-c5a74bcca799 // indirect
 	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect

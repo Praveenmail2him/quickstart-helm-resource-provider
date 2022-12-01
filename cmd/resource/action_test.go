@@ -2,7 +2,6 @@ package resource
 
 import (
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -29,8 +28,8 @@ func TestInitialize(t *testing.T) {
 		SubnetIds:        []string{"subnet-02"},
 	}
 	data := []byte("Test")
-	_ = ioutil.WriteFile(KubeConfigLocalPath, data, 0644)
-	_ = ioutil.WriteFile(ZipFile, data, 0644)
+	_ = os.WriteFile(KubeConfigLocalPath, data, 0644)
+	_ = os.WriteFile(ZipFile, data, 0644)
 	defer os.Remove(KubeConfigLocalPath)
 	defer os.Remove(ZipFile)
 	tests := map[string]struct {
@@ -131,8 +130,8 @@ func TestCheckReleaseStatus(t *testing.T) {
 		SubnetIds:        []string{"subnet-02"},
 	}
 	data := []byte("Test")
-	_ = ioutil.WriteFile(KubeConfigLocalPath, data, 0644)
-	_ = ioutil.WriteFile(ZipFile, data, 0644)
+	_ = os.WriteFile(KubeConfigLocalPath, data, 0644)
+	_ = os.WriteFile(ZipFile, data, 0644)
 	defer os.Remove(KubeConfigLocalPath)
 	defer os.Remove(ZipFile)
 	tests := map[string]struct {
